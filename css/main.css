@@ -32,11 +32,59 @@ img {
 
 h2 {
   font-family: "Denk One", sans-serif;
+  margin-top: 0;
+}
+
+p {
   margin: 0;
 }
 
 figcaption {
   background-color: #e2e2e2;
   width: 100%;
-  padding: 1em;
+  padding: 1.3em;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  figure {
+    position: relative;
+  }
+
+  figcaption {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    background-color: rgba(0, 0, 0, .3);
+    max-width: 20em;
+    border-radius: 10px;
+  }
+
+  h2,
+  p {
+    color: #fff;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+     font-size: 120%;
+     line-height: 1.5;
+   }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+     font-size: 130%;
+   }
+
 }
